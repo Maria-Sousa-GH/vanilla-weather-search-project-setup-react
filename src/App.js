@@ -1,13 +1,12 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+import Weather from "./Weather";
 import "./App.css";
-import Weather from "./Weather"; // Import the Weather component correctly
 
 export default function App() {
   return (
     <div className="App">
-      <div className="weather-app">
-        <Weather />
+      <div className="container">
+        <Weather defaultCity="New York" />
         <footer>
           This project was coded by{" "}
           <a
